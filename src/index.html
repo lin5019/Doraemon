@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no, viewport-fit=cover">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        *::before,*::after{
+            box-sizing: border-box;
+        }
+        button {
+            border: none;
+            outline: none;
+
+        }
+        .btns {
+            position: fixed;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .btns>button {
+            padding: 6px 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+        .DoraemonHtml {
+            height: 50vh;
+            overflow: auto;
+        }
+        .DoraemonHtml::-webkit-scrollbar {display:none}
+        .Doraemon {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            margin-left: -170px;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+<style class="DoraemonStyle"></style>
+<div class="btns">
+    <button class="stopBtn">暂停</button>
+    <button class="playBtn">播放</button>
+    <button class="slowBtn">慢速</button>
+    <button class="normalBtn">中速</button>
+    <button class="quickBtn">快速</button>
+</div>
+<div class="content">
+    <div class="DoraemonHtml"></div>
+    <div class="Doraemon">
+        <!--耳朵-->
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+        <div class="head">
+
+            <!--头发-->
+            <div class="hair"></div>
+            <!--脸-->
+            <div class="face">
+                <!--眉毛-->
+                <div class="brow left"></div>
+                <div class="brow right"></div>
+                <!--眼睛-->
+                <div class="eye left">
+                    <!--眼睫毛-->
+                    <div class="eyelash1"></div>
+                    <div class="eyelash2"></div>
+                    <div class="eyelash3"></div>
+                    <!--                瞳孔-->
+                    <div class="tongkong"></div>
+
+                </div>
+                <div class="eye right">
+                    <!--眼睫毛-->
+                    <div class="eyelash1"></div>
+                    <div class="eyelash2"></div>
+                    <div class="eyelash3"></div>
+                    <!--                瞳孔-->
+                    <div class="tongkong"></div>
+                </div>
+                <!--腮红-->
+                <div class="blush left"></div>
+                <div class="blush right"></div>
+                <!--鼻子-->
+                <div class="nose"></div>
+                <!--嘴巴-->
+                <div class="mouth">
+
+                </div>
+                <div class="smile"></div>
+                <div class="shadow"></div>
+            </div>
+        </div>
+        <!--项圈-->
+        <div class="chaplet"></div>
+        <!--铃铛-->
+        <div class="bell">
+            <div class="bell-line"></div>
+            <div class="bell-circle"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
